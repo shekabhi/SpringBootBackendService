@@ -3,10 +3,8 @@ package com.gfg.abhishek.SpringBootBackendService.controller;
 import com.gfg.abhishek.SpringBootBackendService.model.User;
 import com.gfg.abhishek.SpringBootBackendService.service.UserDaoService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.autoconfigure.security.SecurityProperties;
 import org.springframework.web.bind.annotation.*;
 
-import javax.jws.soap.SOAPBinding;
 import java.util.List;
 import java.util.Optional;
 

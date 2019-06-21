@@ -9,7 +9,7 @@ import java.util.List;
 import java.util.Optional;
 
 @Service
-public abstract class UserDaoService {
+public class UserDaoService {
 
     @Autowired
     UserRepository userRepository ;
