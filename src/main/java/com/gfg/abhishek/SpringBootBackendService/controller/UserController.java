@@ -14,6 +14,11 @@ public class UserController {
     @Autowired
     UserDaoService userDaoService  ;
 
+    @GetMapping("/")
+    public String home(){
+        return "Welcome to home Page" ;
+    }
+
     @GetMapping("/users")
     public List<User> getAllUsers() {
         return userDaoService.findAllUsers();
