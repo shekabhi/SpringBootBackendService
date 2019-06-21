@@ -14,23 +14,23 @@ public abstract class UserDaoService {
     @Autowired
     UserRepository userRepository ;
 
-    List<User> findAllUsers() {
+    public List<User> findAllUsers() {
         return userRepository.findAll() ;
     }
 
-    Optional<User> findUserByID(Long id) {
+    public Optional<User> findUserByID(Long id) {
         return userRepository.findById(id);
     }
 
-    User createUser(User user) {
+    public User createUser(User user) {
         return userRepository.save(user);
     }
 
-    User updateUser(User user) {
+    public User updateUser(User user) {
         return userRepository.save(user);
     }
 
-    void deleteUser(Long id) {
+    public void deleteUser(Long id) {
          userRepository.deleteById(id);
     }
 
